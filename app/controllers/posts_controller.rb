@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
+
+  PER_PAGE = 10
+
   def index
-    @posts = Post.limit(10)
+    @posts = Post.page(params[:page]).per(PER_PAGE)
   end
 
   def create!
