@@ -15,6 +15,7 @@ gem 'sass-rails', '>= 6'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'faker', require: false
 gem 'kaminari'
+gem 'pry-byebug'
 
 
 group :development, :test do
